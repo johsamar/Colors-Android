@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/lblProposedColor"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="#6699CC"
+                android:gravity="center"
+                android:text="@string/Proposed_color" />
+
+            <TextView
+                android:id="@+id/lblTargetColor"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#777"
+                android:gravity="center"
+                android:text="@string/Target_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblRedTitle"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:gravity="center|start"
+                android:text="@string/Red" />
+
+            <SeekBar
+                android:id="@+id/sbrRed"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:max="255"
+                android:progress="102"
+                android:progressTint="#B00"
+                android:thumbTint="#B00" />
+
+            <TextView
+                android:id="@+id/lblRedValue"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:gravity="center|start"
+                android:text="102" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblGreenTitle"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:gravity="center|start|right"
+                android:text="@string/Green" />
+
+            <SeekBar
+                android:id="@+id/sbrGreen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:max="255"
+                android:progress="100"
+                android:progressTint="#0B0"
+                android:thumbTint="#0b0" />
+
+            <TextView
+                android:id="@+id/lblGreenValue"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:text="100" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblBlueTitle"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:gravity="center|start"
+                android:text="@string/Blue" />
+
+            <SeekBar
+                android:id="@+id/sbrBlue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:max="255"
+                android:progress="210"
+                android:progressTint="#00B"
+                android:thumbTint="#00B" />
+
+            <TextView
+                android:id="@+id/lblBlueValue"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:gravity="center|start"
+                android:text="210" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnGetScore"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/Score" />
+
+            <Button
+                android:id="@+id/btnNewColor"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/New" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

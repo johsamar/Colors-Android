@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Colors</string>
+    <string name="Red">Red</string>
+    <string name="Green">Green</string>
+    <string name="Blue">Blue</string>
+    <string name="Target_color">Target color</string>
+    <string name="Proposed_color">Proposed color</string>
+    <string name="Your_score_is">Your score is %1$s</string>
+    <string name="X_is_Y">%1$s is %2$s</string>
+    <string name="Low">Low</string>
+    <string name="Very_low">Very low</string>
+    <string name="High">High</string>
+    <string name="Very_high">Very high</string>
+    <string name="Tips">Tips</string>
+    <string name="New">New</string>
+    <string name="Score">Score</string>
+</resources>
